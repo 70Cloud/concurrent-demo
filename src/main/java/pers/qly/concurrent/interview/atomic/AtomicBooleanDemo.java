@@ -34,7 +34,7 @@ public class AtomicBooleanDemo {
 
     // Q：Atomic* CAS 的底层是如何实现的？
     // A：比较和交换 2 次操作，CAS 操作是一个更大的原子操作
-    //   底层 X86 系统有一个汇编指令：cpmxchg(Compare And Exchange)
+    //   底层 X86 系统有一个汇编指令：cpmxchg(Compare And Exchange)，比较与交换
 
     private static int actualValue = 3;// 原始值
 
