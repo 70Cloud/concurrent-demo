@@ -32,9 +32,9 @@ public class ThreadSafeCollectionQuestion {
     //    ConcurrentHashMap：不允许 key、value 为空
 
     // Q：请说明 ConcurrentHashMap 在不同的 J D K 中的实现？
-    // A：< 7 采用分段锁实现，读的时候部分锁，写的时候需要锁
-    //    = 7 读的时候不需要锁，写的时候需要锁
-    //    8 读的时候不需要锁，写的时候需要锁，为了解决 Hash 冲突，采用红黑树
+    // A：< 7：采用分段锁实现，读的时候部分锁，写的时候需要锁
+    //    = 7：读的时候不需要锁，写的时候需要锁
+    //    8：读的时候不需要锁，写的时候需要锁，为了解决 Hash 冲突，采用红黑树
 
     // Q：请说明 ConcurrentHashMap 与 ConcurrentSkipListMap 各自的优势与不足？
     // A：ConcurrentHashMap 在写的时候都会加锁，内存占的小一点
