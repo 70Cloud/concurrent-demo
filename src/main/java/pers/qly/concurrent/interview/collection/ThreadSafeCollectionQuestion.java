@@ -14,14 +14,14 @@ public class ThreadSafeCollectionQuestion {
 
     // Q：请在 Java 集合框架以及 J.U.C 框架中各举出 List、Set 以及 Map 的实现？
     // A：List：
-    //      Java 集合框架： ArrayList、LinkedList
-    //      J.U.C 框架： CopyOnWriteArrayList、LinkedList
+    //      Java 集合框架：ArrayList、LinkedList
+    //      J.U.C 框架：CopyOnWriteArrayList、LinkedList
     //    Set：
-    //      Java 集合框架： HashSet、TreeSet
-    //      J.U.C 框架： CopyOnWriteArraySet、ConcurrentSkipListSet
+    //      Java 集合框架：HashSet、TreeSet
+    //      J.U.C 框架：CopyOnWriteArraySet、ConcurrentSkipListSet
     //    Map：
-    //      Java 集合框架： HashMap、TreeMap
-    //      J.U.C 框架： ConcurrentSkipListMap、ConcurrentHashMap
+    //      Java 集合框架：HashMap、TreeMap
+    //      J.U.C 框架：ConcurrentSkipListMap、ConcurrentHashMap
 
     // Q：如何将普通 List、Set 以及 Map 转化为线程安全对象？如何在 Java 9+ 实现以上问题？
     // A：参考如下
