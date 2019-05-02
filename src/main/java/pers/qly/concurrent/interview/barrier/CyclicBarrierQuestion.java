@@ -20,8 +20,8 @@ public class CyclicBarrierQuestion {
                 action();
                 try {
                     // 当计数 > 0 时，才阻塞
-                    // before : 5 - 3 = 2 > 0 就会阻塞
-                    // after : 5 - 5 = 0 = 0 就不会阻塞
+                    // before: 5 - 3 = 2 > 0 就会阻塞
+                    // after: 5 - 5 = 0 = 0 就不会阻塞
                     // CyclicBarrier.await() = CountDownLatch.countDown() + await()
                     // 先计数 -1，再判断当计数 > 0 时，才阻塞
                     barrier.await();
