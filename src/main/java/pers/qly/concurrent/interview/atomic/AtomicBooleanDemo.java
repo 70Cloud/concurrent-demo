@@ -17,10 +17,10 @@ public class AtomicBooleanDemo {
     //    volatile 底层就是基于内存屏障来实现的，内存屏障可以理解为变量锁，对一个变量的原子性的保证，对象存在中间对象
     //    锁是为什么出现，为了锁一段代码，这段代码叫临界区
 
-    // Q：在 Java 中， volatile long 和 double 是线程安全的吗？
+    // Q：在 Java 中，volatile long 和 double 是线程安全的吗？
     // A：是线程安全的
 
-    // Q：在 Java 中， volatile 的底层实现是基于什么机制？
+    // Q：在 Java 中，volatile 的底层实现是基于什么机制？
     // A：内存屏障，其实就是锁，可以理解为变量锁，对一个变量的原子性的保证
 
     // Q：为什么 AtomicBoolean 内部变量使用 int 实现， 而非 boolean ？
