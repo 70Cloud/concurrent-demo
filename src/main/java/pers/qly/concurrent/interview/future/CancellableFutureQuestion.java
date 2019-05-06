@@ -10,7 +10,7 @@ import java.util.concurrent.*;
 public class CancellableFutureQuestion {
 
     // Q：如何获取 Future 对象？
-    // A：submit
+    // A：通过 ExecutorService 的 submit 方法
 
     // Q：请举例 Future get() 以及 get(long ,TimeUnit) 方法的使用场景？
     // A：主要用于超时等待，如果不希望等待太长时间，就可以加个时间，超过这个时间会报异常
