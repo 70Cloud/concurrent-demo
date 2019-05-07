@@ -22,7 +22,7 @@ public class DaemonThreadQuestion {
                     currentThread.isDaemon()
             );
         }, "daemon");
-        // 编程守候线程
+        // 变成守候线程
         t1.setDaemon(true);
         t1.start();
 
