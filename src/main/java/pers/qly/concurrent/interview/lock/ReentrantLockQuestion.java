@@ -52,7 +52,7 @@ public class ReentrantLockQuestion {
     //    看一下实现 ReentrantLock 中的 ReentrantLock#lock() 与 ReentrantLock#lockInterruptibly()
     //    ReentrantLock#lock() 实现参考上方
     //    ReentrantLock#lockInterruptibly() 首先会判断 Thread.interrupted(),如果线程已经被中断，那么会抛出异常
-    //    接下来进到 doAcquireInterruptibly()，前面的部分与 acquireQueued() 差不多，主要区别在判断获取失败后的操作，
+    //    接下来进到 doAcquireInterruptibly() 方法，前面的部分与 acquireQueued() 差不多，主要区别在判断获取失败后的操作，
     //    parkAndCheckInterrupt():会清掉状态，true -> false
     //    如果已经被其他线程中断(interrupted = true)的话，会抛异常
 
