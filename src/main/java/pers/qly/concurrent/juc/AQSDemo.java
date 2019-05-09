@@ -7,9 +7,9 @@ package pers.qly.concurrent.juc;
  */
 public class AQSDemo {
 
-    // AQS AbstractQueuedSynchronizer 同步队列，FIFO 队列，可以看做是一个用来实现锁以及其他需要同步功能的框架。
+    // AQS：AbstractQueuedSynchronizer 同步队列，FIFO 队列，可以看做是一个用来实现锁以及其他需要同步功能的框架。
 
-    // 从使用上来说，AQS 的功能可以分为两种：独占和共享
+    // 从使用上来说，AQS 的功能可以分为两种：独占锁和共享锁
     // 独占锁模式下，每次只能有一个线程持有锁，比如 ReentrantLock 就是以独占方式实现的互斥锁
     // 共享锁模式下，允许多个线程同时获取锁，并发访问共享资源，比如 ReentrantReadWriteLock。
 
