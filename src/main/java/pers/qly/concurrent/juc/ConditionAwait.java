@@ -23,11 +23,8 @@ public class ConditionAwait extends Thread {
     public void run() {
         try {
             lock.lock();
-
             System.out.printf("[%s] 开始执行 Thread await\n", Thread.currentThread().getName());
-
             condition.await(); // 会释放锁，进入 Condition 等待队列，LockSupport.park(node.thread) 阻塞
-
             System.out.printf("[%s] 执行结束 Thread await\n", Thread.currentThread().getName());
         } catch (InterruptedException e) {
             e.printStackTrace();

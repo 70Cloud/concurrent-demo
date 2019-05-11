@@ -26,8 +26,8 @@ public class ThreadStateQuestion {
 
         // Runnable 怎么调用的 run 方法参考 thread.cpp 中 JavaThread::run() 方法，会调用 thread_main_inner() 方法
         // 执行完成之后会调用 exit 以及 delete
-        //  this->exit(false);
-        //  delete this;
+        // this->exit(false);
+        // delete this;
 
         /**
          * void JavaThread::thread_main_inner() {
