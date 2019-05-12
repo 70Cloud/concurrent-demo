@@ -26,7 +26,6 @@ public class Demo {
     // 6、原子性、可见性、有序性的本质？
     //    高速缓存、CPU 指令优化、内存乱序、缓存一致性
 
-
     // 这段代码无意义，只是用来看看指令
     static volatile int i;
     // 加了 volatile ,编译时加了一个 ACC_VOLATILE 指令

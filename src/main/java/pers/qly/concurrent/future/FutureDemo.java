@@ -19,8 +19,8 @@ public class FutureDemo {
 
         ExecutorService service = Executors.newFixedThreadPool(1);
 
-        Future<String> future = service.submit(() -> {// 正常流程
-            // 如果随机时间大于等于 100ms,那么触发容错
+        Future<String> future = service.submit(() -> { // 正常流程
+            // 如果随机时间大于等于 100 ms,那么触发容错
             int value = random.nextInt(200);
 
             System.out.println("helloWorld() costs : " + value + " ms.");
