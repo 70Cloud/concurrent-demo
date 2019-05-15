@@ -33,6 +33,7 @@ public class MyExecutors extends ThreadPoolExecutor {
 
     @Override
     public void shutdown() {
+
         System.out.println("已执行的任务数：" + this.getCompletedTaskCount() + "\n");
         System.out.println("当前活动线程数：" + this.getActiveCount() + "\n");
         System.out.println("当前排队线程数：" + this.getQueue().size() + "\n");
@@ -42,12 +43,14 @@ public class MyExecutors extends ThreadPoolExecutor {
 
     @Override
     protected void beforeExecute(Thread t, Runnable r) {
+
         startTime.put(String.valueOf(r.hashCode()), new Date());
         super.beforeExecute(t, r);
     }
 
     @Override
     protected void afterExecute(Runnable r, Throwable t) {
+
         Date startDate = startTime.remove(String.valueOf(r.hashCode()));
         Date finishDate = new Date();
         long dif = finishDate.getTime() - startDate.getTime(); // 执行间隔时间
@@ -59,6 +62,7 @@ public class MyExecutors extends ThreadPoolExecutor {
     }
 
     public static ExecutorService newMyExecutors() {
+        
         return new MyExecutors(0, Integer.MAX_VALUE,
                 60L, TimeUnit.SECONDS, new SynchronousQueue<>());
     }
