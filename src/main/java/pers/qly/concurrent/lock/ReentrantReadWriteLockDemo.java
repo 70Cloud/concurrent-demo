@@ -26,7 +26,7 @@ public class ReentrantReadWriteLockDemo {
         System.out.println("开始读取数据");
         read.lock(); // 读锁
         // (作用：当我们在执行读操作的时候，首先会获取一个读锁，在并发访问的时候，读不会被阻塞，
-        // 也就是说，如果有10个或者100个线程访问读锁，不会影响后续的读操作)
+        // 也就是说，如果有 10 个或者 100 个线程访问读锁，不会影响后续的读操作)
         try {
             return cacheMap.get(key);
         } finally {

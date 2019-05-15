@@ -45,7 +45,7 @@ public class ReentrantLockDemo {
         }
 
         Thread.sleep(3000);
-        
+
         System.out.println("result : " + count);
     }
 }
