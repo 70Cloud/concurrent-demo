@@ -34,10 +34,14 @@ public class AtomicDemo {
     }
 
     public static void main(String[] args) throws InterruptedException {
+
         for (int i = 0; i < 1000; i++) {
+
             new Thread(() -> AtomicDemo.incr()).start();
         }
+
         Thread.sleep(4000);
+        
         System.out.println(count.get());
     }
 }
