@@ -22,11 +22,14 @@ public class AtomicDemo {
     private static AtomicInteger count = new AtomicInteger(0);
 
     public static void incr() {
+
         try {
+
             Thread.sleep(1);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         count.getAndIncrement();
     }
 
