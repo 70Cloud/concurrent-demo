@@ -62,7 +62,7 @@ public class MyExecutors extends ThreadPoolExecutor {
     }
 
     public static ExecutorService newMyExecutors() {
-        
+
         return new MyExecutors(0, Integer.MAX_VALUE,
                 60L, TimeUnit.SECONDS, new SynchronousQueue<>());
     }
