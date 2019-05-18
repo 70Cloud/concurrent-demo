@@ -41,7 +41,7 @@ public class AtomicDemo {
         }
 
         Thread.sleep(4000);
-        
+
         System.out.println(count.get());
     }
 }
