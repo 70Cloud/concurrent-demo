@@ -27,7 +27,7 @@ public class ExecutorServiceQuestion {
     //    DiscardPolicy 抛弃策略：直接丢弃，也不抛异常，什么都不加
 
     public static void main(String[] args) {
-        
+
         /**
          * 1.5
          *   ThreadPoolExecutor

@@ -60,8 +60,11 @@ public class ThreadPoolExecutorQuestion {
     private static void setThreadFactory(ExecutorService executorService, Set<Thread> threadsContainer) {
 
         if (executorService instanceof ThreadPoolExecutor) {
+
             ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) executorService;
+
             ThreadFactory oldThreadFactory = threadPoolExecutor.getThreadFactory();
+            
             threadPoolExecutor.setThreadFactory(new DelegatingThreadFactory(oldThreadFactory, threadsContainer));
         }
     }
