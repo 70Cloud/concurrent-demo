@@ -15,7 +15,9 @@ public class AllThreadInfoQuestion {
     // A：com.sun.management.ThreadMXBean.getThreadAllocatedBytes 可以获取线程的分配内存，还有其他的一些信息
 
     public static void main(String[] args) {
+
         ThreadMXBean threadMXBean = (ThreadMXBean) ManagementFactory.getThreadMXBean();
+        
         long[] threadIds = threadMXBean.getAllThreadIds();
 
         for (long threadId : threadIds) {
