@@ -17,7 +17,7 @@ public class AllThreadInfoQuestion {
     public static void main(String[] args) {
 
         ThreadMXBean threadMXBean = (ThreadMXBean) ManagementFactory.getThreadMXBean();
-        
+
         long[] threadIds = threadMXBean.getAllThreadIds();
 
         for (long threadId : threadIds) {
