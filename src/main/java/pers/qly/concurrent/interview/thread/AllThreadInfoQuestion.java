@@ -24,7 +24,9 @@ public class AllThreadInfoQuestion {
 //            ThreadInfo threadInfo = threadMXBean.getThreadInfo(threadId);
 //            System.out.println(threadInfo.toString());
             long bytes = threadMXBean.getThreadAllocatedBytes(threadId);
+
             long kBytes = bytes / 1024;
+
             System.out.printf("线程[ID:%d] 分配内存： %s KB\n", threadId, kBytes);
         }
 
