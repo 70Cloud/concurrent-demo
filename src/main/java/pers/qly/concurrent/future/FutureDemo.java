@@ -35,7 +35,7 @@ public class FutureDemo {
         } catch (Exception e) {
             // 超时流程
             future.cancel(true);// 解决容错后还能收到返回结果的问题
-            
+
             System.out.println("超时保护！");
         }
 
