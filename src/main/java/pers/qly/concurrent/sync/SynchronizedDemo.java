@@ -36,7 +36,7 @@ public class SynchronizedDemo {
     // 2、synchronized 修饰方法
     // 加了 synchronized 输出结果就是 1000，不加永远 <= 1000
     public synchronized static void incr() {
-        
+
         try {
             Thread.sleep(1);
         } catch (InterruptedException e) {
@@ -54,11 +54,14 @@ public class SynchronizedDemo {
         synchronizedDemo1.SynchronizedDemo();
 
         for (int i = 0; i < 1000; i++) {
+
             new Thread(() -> {
                 SynchronizedDemo.incr();
             }).start();
         }
+
         Thread.sleep(4000);
+
         System.out.println("result : " + SynchronizedDemo.count);
     }
 
@@ -69,6 +72,6 @@ public class SynchronizedDemo {
     // 3、实现同步是要很大的系统开销作为代价的，甚至可能造成死锁，所以尽量避免无谓的同步控制。
 
     // Q：为什么 Synchronized 能实现线程同步？
-    // A：Java 对象头，Mark Work(存储对象的 HashCode，分代年龄和锁标志位信息)，Monitorenter\MonitorExit
+    // A：Java 对象头，Mark Work(存储对象的 HashCode，分代年龄和锁标志位信息)，MonitorEnter\MonitorExit
     //    Synchronized 通过 Monitor 来实现线程同步，Monitor 是依赖于底层的操作系统的 Mutex Lock（互斥锁）来实现的线程同步。
 }
