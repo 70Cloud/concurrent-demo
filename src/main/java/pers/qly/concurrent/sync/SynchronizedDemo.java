@@ -36,6 +36,7 @@ public class SynchronizedDemo {
     // 2、synchronized 修饰方法
     // 加了 synchronized 输出结果就是 1000，不加永远 <= 1000
     public synchronized static void incr() {
+        
         try {
             Thread.sleep(1);
         } catch (InterruptedException e) {
