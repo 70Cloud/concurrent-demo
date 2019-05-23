@@ -19,9 +19,10 @@ public class AsyncDemo {
     public static void main(String[] args) {
 
         Request request = new Request();
-        request.setName("NoNo");
-        new AsyncDemo().doTest(request);
 
+        request.setName("NoNo");
+
+        new AsyncDemo().doTest(request);
     }
 
     private void doTest(Request request) {
