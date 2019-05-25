@@ -18,6 +18,7 @@ public class ThreadWaitDemo extends Thread {
 
     @Override
     public void run() {
+
         synchronized (lock){
             System.out.printf("[%s] 开始执行 Thread wait\n", Thread.currentThread().getName());
             try {
@@ -27,6 +28,5 @@ public class ThreadWaitDemo extends Thread {
             }
             System.out.printf("[%s] 执行结束 Thread wait\n", Thread.currentThread().getName());
         }
-
     }
 }
