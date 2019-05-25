@@ -13,6 +13,7 @@ public class SaveProcessor extends Thread implements RequestProcessor {
 
     @Override
     public void run() {
+
         while (true) {
             Request request = null;
             try {
@@ -26,6 +27,7 @@ public class SaveProcessor extends Thread implements RequestProcessor {
 
     @Override
     public void processRequest(Request request) {
+
         linkedBlockingDeque.add(request);
     }
 }

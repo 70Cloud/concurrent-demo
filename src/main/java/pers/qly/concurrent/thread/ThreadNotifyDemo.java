@@ -21,7 +21,7 @@ public class ThreadNotifyDemo extends Thread {
         synchronized (lock) {
             System.out.printf("[%s] 开始执行 Thread notify\n", Thread.currentThread().getName());
 
-            lock.notify(); // 阻塞  LockSupport.unpark(node.thread)
+            lock.notify(); // 阻塞 LockSupport.unpark(node.thread)
 
             System.out.printf("[%s] 执行结束 Thread notify\n", Thread.currentThread().getName());
         }
