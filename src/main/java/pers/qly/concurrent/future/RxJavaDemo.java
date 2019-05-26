@@ -36,7 +36,6 @@ public class RxJavaDemo {
                         if (value > 100) {
                             throw new RuntimeException("TimeOut!");
                         }
-
                         // 大于 100 这句话也不会出来，直接执行 onError()
                         System.out.println("helloWorld() costs : " + value + " ms.");
                     }
