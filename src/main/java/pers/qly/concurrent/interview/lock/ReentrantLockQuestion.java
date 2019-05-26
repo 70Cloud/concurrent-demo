@@ -18,6 +18,7 @@ public class ReentrantLockQuestion {
     //    acquireQueued() : 如果当前线程已被其他线程调用了 interrupt() 方法时，这时会返回 true，
     //       acquireQueued() 执行完时，interrupted 会清空(false)
     //       再通过 selfInterrupt() 方法将状态恢复(interrupted = true)
+    
     /**
      * public final void acquire(int arg) {
      *         if (!tryAcquire(arg) &&

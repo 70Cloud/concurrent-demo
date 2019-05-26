@@ -25,7 +25,7 @@ public class CancellableFutureQuestion {
     //    4.合理的使用线程池
     //    5.要有超时的意识，只允许它执行多少秒（为什么 HTTP 请求、服务端的相应、RPC 框架都会有超时时间，
     //         就是 IO 是有限的，前面都堵住了，后边就执行不了了）
-    
+
     public static void main(String[] args) {
 
         ExecutorService executorService = Executors.newSingleThreadExecutor();
