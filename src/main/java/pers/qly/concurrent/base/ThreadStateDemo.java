@@ -9,7 +9,6 @@ import java.util.concurrent.TimeUnit;
  */
 public class ThreadStateDemo {
     // 命令行 输入 jps 查看当前线程 id ,然后输入 jstack 线程id 查看线程状态
-
     public static void main(String[] args) {
 
         // NEW
@@ -54,7 +53,6 @@ public class ThreadStateDemo {
     }
 
     static class BlockDemo extends Thread{
-
         @Override
         public void run() {
             synchronized (BlockDemo.class){
