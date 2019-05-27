@@ -22,7 +22,6 @@ public class BlockingQueueQuiz {
     // A：LinkedTransferQueue(1.7 提供)，性能比 LinkedBlockingQueue 好很多
 
     public static void main(String[] args) throws Exception {
-
         offer(new ArrayBlockingQueue<>(2));
         offer(new LinkedBlockingQueue<>(2));
         offer(new PriorityBlockingQueue<>(2));
