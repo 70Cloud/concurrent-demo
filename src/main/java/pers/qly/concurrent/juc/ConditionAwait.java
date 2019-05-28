@@ -21,6 +21,7 @@ public class ConditionAwait extends Thread {
 
     @Override
     public void run() {
+        
         try {
             lock.lock();
             System.out.printf("[%s] 开始执行 Thread await\n", Thread.currentThread().getName());
