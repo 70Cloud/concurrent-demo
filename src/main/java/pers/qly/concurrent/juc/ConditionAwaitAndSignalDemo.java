@@ -25,7 +25,7 @@ public class ConditionAwaitAndSignalDemo extends Thread {
 
     @Override
     public void run() {
-        
+
         try {
             lock.lock();
             System.out.printf("[%s] 开始执行 Thread Wait\n", Thread.currentThread().getName());
