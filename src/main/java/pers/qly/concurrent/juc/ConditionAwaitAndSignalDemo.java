@@ -16,6 +16,7 @@ public class ConditionAwaitAndSignalDemo extends Thread {
     // 与 JVM 的实现 wait(waitSet) 和 notify(CXQ\EntryList) 类似
 
     private Lock lock;
+
     private Condition condition;
 
     public ConditionAwaitAndSignalDemo(Lock lock, Condition condition) {
