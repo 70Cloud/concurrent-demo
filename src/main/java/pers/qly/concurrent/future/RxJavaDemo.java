@@ -30,7 +30,7 @@ public class RxJavaDemo {
                     }
 
                     public void onNext(String s) {  // 数据消费 s = "Hello World!"
-                        // 如果随机时间大于等于 100ms,那么触发容错
+                        // 如果随机时间大于等于 100 ms,那么触发容错
                         int value = random.nextInt(200);
 
                         if (value > 100) {
