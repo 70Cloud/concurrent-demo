@@ -88,6 +88,5 @@ public class ThreadSafeDemo {
         //          对每个 volatile 写操作的后面会插入 storeload barrier
         //          对每个 volatile 读操作的前面会插入 loadload barrier
         //          对每个 volatile 读操作的后面会插入 loadstore barrier
-
     }
 }
