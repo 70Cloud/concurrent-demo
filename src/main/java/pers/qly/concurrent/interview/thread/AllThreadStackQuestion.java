@@ -15,7 +15,7 @@ public class AllThreadStackQuestion {
     // A：NEW  RUNNABLE  BLOCKED  WAITING  TIMED_WAITING  TERMINATED
 
     // Q：如何获取当前 JVM 所有的线程状态？
-    // A：1.通过 jps,jstack 命令可以获取
+    // A：1.通过 jps 或 jstack 命令可以获取
     //    2.通过 ThreadMXBean 中的 ThreadMXBean.getThreadInfo 可以获取
 
     public static void main(String[] args) {
