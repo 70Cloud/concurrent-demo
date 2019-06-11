@@ -31,7 +31,7 @@ public class CompleteAllThreadsQuestion {
         // 活跃的线程数
         int count = threadGroup.activeCount();
         Thread[] threads = new Thread[count];
-        // 把所有的线程复制 threads 数组（递归）
+        // 把所有的线程复制到 threads 数组（递归）
         threadGroup.enumerate(threads, true);
 
         for (Thread thread : threads) {
