@@ -44,7 +44,7 @@ public class ThreadSafeDemo {
         // A：volatile/synchronized/final/j.u.c
 
         // 原子性解决方案：
-        //      synchronized(monitorenter/monitorexit)、AtomicInteger等
+        //      synchronized(monitorenter/monitorexit)、AtomicInteger 等
 
         // 可见性解决方案：
         //      volatile、synchronized、final
