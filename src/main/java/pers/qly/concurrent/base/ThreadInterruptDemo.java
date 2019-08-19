@@ -30,21 +30,21 @@ public class ThreadInterruptDemo {
 
         // FIXME
         // 第二种复位方式
-//        Thread thread = new Thread(() -> {
-//            while (true) { // 相当于 for (; ; )
-//                try {
-//                    Thread.sleep(1 * 10000);
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        });
-//
-//        thread.start();
-//        TimeUnit.SECONDS.sleep(1);
-//        thread.interrupt();
-//        System.out.println("before : " + thread.isInterrupted());
-//        TimeUnit.SECONDS.sleep(1);
-//        System.out.println("after : " + thread.isInterrupted());
+        Thread thread = new Thread(() -> {
+            while (true) { // 相当于 for (; ; )
+                try {
+                    Thread.sleep(1 * 10000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        thread.start();
+        TimeUnit.SECONDS.sleep(1);
+        thread.interrupt();
+        System.out.println("before : " + thread.isInterrupted());
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("after : " + thread.isInterrupted());
     }
 }
