@@ -16,6 +16,7 @@ public class ThreadExceptionQuestion {
     public static void main(String[] args) throws InterruptedException {
 
         // 这样有什么好处？比如说在高并发的情况下，如果把异常堆栈信息都输出，会打爆
+        // 建议用这种方法！
         Thread.setDefaultUncaughtExceptionHandler((thread, throwable) -> {
             System.out.printf("线程[%s] 遇到了异常，详细信息：%s\n",
                     thread.getName(),

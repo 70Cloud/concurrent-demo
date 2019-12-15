@@ -19,7 +19,7 @@ public class ConcurrentHashSetQuestion {
     // A：不存在，实现参考如下，或者用 HashMap
 
     // Q：当 Set#iterator() 方法返回 Iterator 对象后，能否在其迭代中，给 Set 对象添加新的元素？
-    // A：不一定，因为 Set 在这里并不一定是 java.util 中的实现
+    // A：不一定，因为 Set 在这里并不一定是 java.util.concurrent 中的实现
     //    会报 ConcurrentModificationException，传统实现会有 fail-fast 快速失败的问题
     //    iterator 在迭代的时候会有一个 Mutex 互斥锁，创建迭代器的时候会建立 一个内存索引表，指向原来的对象
     //    当对象数量改变的时候，会出错。
